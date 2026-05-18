@@ -1,0 +1,27 @@
+.navbar {
+    background-color: cornflowerblue;
+    padding: 1rem 2rem 2rem 2rem;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.navbar li {
+    margin-left: 20px;
+    
+}
+
+.navbar a {
+    color: rgb(255, 228, 231);
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: darkblue;
+    cursor: pointer;
+}

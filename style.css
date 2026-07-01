@@ -79,15 +79,37 @@ body {
     width: 20rem;
 }
 
+.project-container {
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.project-container p {
+    text-align: left;
+}
+
+.project-container img {
+    width: 70%;
+    height: auto;
+}
+
+.project-label {
+    text-align: center;
+}
+
+
 .project-row {
     display: flex;
-    flex-wrap: wrap; /* Allows cards to drop to the next line */
+    flex-wrap: wrap;
     gap: 3rem; 
     justify-content: center;
 }
 
-img:hover {
-  transform: scale(1.15); /* Enlarges the image by 15% */
+.project-card img:hover {
+  transform: scale(1.15);
   position: relative;
-  z-index: 10; /* Ensures the larger image sits on top of nearby items */
+  z-index: 10; 
 }

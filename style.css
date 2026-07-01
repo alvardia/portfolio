@@ -1,6 +1,6 @@
 .navbar {
-    background-color: rgb(38, 107, 176);
-    padding: 1rem 2rem 2rem 2rem;
+    background-color: rgb(187, 207, 255);
+    padding: 0.3rem 2rem 2rem 2rem;
     font-family: 'PlayfairDisplay', serif;
 }
 
@@ -9,7 +9,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     float: right;
 }
 
@@ -18,20 +18,13 @@
 }
 
 .navbar a {
-    color: rgb(255, 228, 231);
+    color: black;
     text-decoration: none;
 }
 
 .navbar a:hover {
     color: darkblue;
     cursor: pointer;
-}
-
-#about-header {
-    justify-self: center;
-    padding-top: 1rem;
-    font-size: 2.5rem;
-    font-family: 'PlayfairDisplay', serif;
 }
 
 @font-face {
@@ -46,14 +39,14 @@
 
 #about-header {
     display: inline-block;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: 'PlayfairDisplay', serif;
     white-space: nowrap;
 }
 
 #about-header::after {
     content: "|";
-    color: cornflowerblue;
+    color: lightgrey;
     animation: blink 1s infinite;
 }
 
@@ -63,6 +56,38 @@
     }
 }
 
-header {
+#profile-img {
+    display: block;
+    width: 20%;
+    border-radius: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centered-section {
     text-align: center;
+}
+
+body {
+    color: darkblue;
+    font-family: 'Inter', serif;
+}
+
+.project-card {
+    text-align: center;
+    width: 20rem;
+}
+
+.project-row {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to drop to the next line */
+    gap: 3rem; 
+    justify-content: center;
+}
+
+img:hover {
+  transform: scale(1.15); /* Enlarges the image by 15% */
+  position: relative;
+  z-index: 10; /* Ensures the larger image sits on top of nearby items */
 }

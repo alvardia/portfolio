@@ -1,0 +1,157 @@
+/* Main Styling */
+@font-face {
+    font-family: 'Datatype';
+    src: url('../fonts/Datatype-Regular.ttf') format('truetype');
+}
+
+h1 {
+    color: rgb(255, 180, 192);
+    padding-left: 2.5rem;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #fff2f5;
+    color: rgb(44, 90, 255);
+    font-family: "Datatype", sans-serif;
+}
+
+#mainLayout {
+    justify-content: center;
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+/* Input Sections */
+#fileInfoInput {
+    margin: 2rem;
+    background-color: rgb(255, 240, 215);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    width: 27rem;
+    box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.1);
+}
+
+/* Text Boxes */
+.tagTextBox {
+    margin-top: 1em;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.tagTextBox label {
+    color: rgb(44, 90, 255);
+    flex: 0 0 28%;
+    text-align: left;
+    font-size: larger;
+}
+
+.tagTextBox input {
+    flex: 0.50;
+    font-size: larger;
+    color: rgb(44, 90, 255);
+    font-family: "Datatype", sans-serif;
+}
+
+/* File Droppers */
+.dropZone {
+    width: 6rem;
+    height: 6rem;
+    border: 2px dashed #aaa;
+    border-radius: 0.5rem;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    font-size: 1.4rem;
+    background-color: #f9f9f9;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.dropZone.dragover {
+    background-color: rgb(255, 213, 136);
+    border-color: #3399ff;
+}
+
+.dropZone.filled {
+    border-color: #4caf50;
+    background-color: rgb(255, 213, 136);
+}
+
+.dropZone:hover {
+    background-color: rgb(255, 213, 136);
+}
+
+#fileDroppers {
+    margin-top: 2rem;
+    display: flex;
+    gap: 7%;
+}
+
+/* Action Buttons */
+
+#actionButtons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    justify-self: center;    
+}
+
+.actionButton {
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+    background-color: #ff9ecb;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-family: "Datatype", sans-serif;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.actionButton:hover {
+    background-color: #ffbd7f;
+}
+
+.downloadButton {
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+    background-color: #ff9ecb;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-family: "Datatype", sans-serif;
+
+    transition: background-color 0.2s ease, transform 0.1s ease
+}
+
+.downloadButton:hover {
+    background-color: #ffbd7f;
+}
+
+/* Walkman S-14 Image */
+#imagePreview {
+    margin-top: 2rem;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    background-color: #f4f4f4;
+}
+
+#imagePreview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#selectedMp3FileName {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}

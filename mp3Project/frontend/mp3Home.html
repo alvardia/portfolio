@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyS14SongMaker</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/browser-id3-writer/dist/browser-id3-writer.min.js"></script>
+</head>
+<body>
+    <h1>My S-14 Song Maker! (^_-)-☆</h1>
+    <div id="mainLayout">
+        <div id="fileInfoInput">
+            <!-- Text Boxes -->
+            <form id="tagsForm">
+                <div class="tagTextBox">
+                    <label for="songTitle">Song Title:</label>
+                    <input type="text" id="songTitle" name="songTitle">
+                </div>
+                <div class="tagTextBox">
+                    <label for="artist">Artist:</label>
+                    <input type="text" id="artist" name="artist">
+                </div>
+                <div class="tagTextBox">
+                    <label for="album">Album Name:</label>
+                    <input type="text" id="album" name="album">
+                </div>
+                <div class="tagTextBox">
+                    <label for="trackNumber">Track Number:</label>
+                    <input type="text" id="trackNumber" name="trackNumber">
+                </div>
+                <div class="tagTextBox">
+                    <label for="genre">Genre:</label>
+                    <input type="text" id="genre" name="genre">
+                </div>
+            </form>
+
+            <div id="fileDroppers">
+                <!-- Image Dropper -->
+                <div class="dropZone" id="imageDrop">
+                    .jpg
+                    <input type="file" id="imageInput" accept=".jpg,.jpeg,.png" hidden>
+                </div>
+
+                <!-- Audio File Dropper -->
+                <div class="dropZone" id="audioDrop">
+                    .mp3
+                    <input type="file" id="audioInput" accept=".mp3" hidden>
+                </div>
+            </div>
+            
+        </div>
+        <div>
+            <div id="imagePreview">
+                <img src="images/pinkWalk.png" alt="sony walkman pink mp3">
+            </div>
+            <div id="selectedMp3FileName">+ Preview ♪┏(・o･)┛♪┗ ( ･o･) ┓</div>
+        </div>
+    </div>
+    
+
+    <div id="actionButtons">
+        <button id="podcastBtn" class="actionButton">Podcast</button>
+        <button id="downloadBtn" class="downloadButton">Download</button>
+        <button id="clearBtn" class="actionButton">Clear</button>
+    </div>
+    
+<script type="module" src="../src/main.js"></script>  
+<script src="https://cdn.jsdelivr.net/npm/browser-id3-writer/dist/browser-id3-writer.min.js"></script>
+</body>
+</html>

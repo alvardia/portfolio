@@ -13,3 +13,27 @@ function typeWriter() {
 }
 
 typeWriter();
+
+
+
+const avatar = document.getElementById("profile-img");
+
+function blink() {
+    avatar.src = "images/blink.png";
+
+    setTimeout(() => {
+        avatar.src = "images/drawing.png";
+        // Next blink in 2–6 seconds
+        setTimeout(blink, 2000 + Math.random() * 4000);
+    }, 120);
+}
+
+setTimeout(blink, 2000); 
+
+
+avatar.addEventListener('click', function() {
+    avatar.src = "images/blink.png";
+    setTimeout(() => {
+        avatar.src = "images/drawing.png";
+    }, 120);
+});
